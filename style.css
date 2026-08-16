@@ -1,0 +1,696 @@
+/* =========================================
+   MORTON PHOTOGRAPHY
+   Main Website Styles
+========================================= */
+
+
+/* ---------- BASIC RESET ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    color: #332d29;
+    background: #f8f5f0;
+    line-height: 1.7;
+}
+
+
+/* ---------- NAVIGATION ---------- */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 22px 6%;
+
+    background: rgba(248, 245, 240, 0.95);
+
+    z-index: 1000;
+
+    border-bottom: 1px solid rgba(51, 45, 41, 0.1);
+}
+
+
+.logo {
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+
+nav a {
+    text-decoration: none;
+    color: #332d29;
+
+    font-family: Arial, sans-serif;
+    font-size: 0.8rem;
+
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+
+    transition: opacity 0.3s ease;
+}
+
+
+nav a:hover {
+    opacity: 0.55;
+}
+
+
+/* ---------- HERO ---------- */
+
+.hero {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 120px 20px 80px;
+
+    background:
+        linear-gradient(
+            rgba(40, 34, 30, 0.45),
+            rgba(40, 34, 30, 0.45)
+        ),
+        url("https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=2000&q=85");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    color: white;
+}
+
+
+.hero-content {
+    max-width: 800px;
+}
+
+
+.eyebrow {
+    font-family: Arial, sans-serif;
+
+    font-size: 0.75rem;
+
+    letter-spacing: 4px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 20px;
+}
+
+
+.hero h1 {
+    font-size: clamp(3rem, 7vw, 6rem);
+
+    line-height: 1.05;
+
+    font-weight: normal;
+
+    margin-bottom: 25px;
+}
+
+
+.hero-text {
+    max-width: 650px;
+
+    margin: 0 auto 35px;
+
+    font-size: 1.1rem;
+}
+
+
+/* ---------- BUTTON ---------- */
+
+.button {
+    display: inline-block;
+
+    padding: 15px 30px;
+
+    background: #f8f5f0;
+
+    color: #332d29;
+
+    text-decoration: none;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 0.8rem;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    transition: all 0.3s ease;
+}
+
+
+.button:hover {
+    background: #332d29;
+    color: #f8f5f0;
+}
+
+
+/* ---------- GENERAL SECTIONS ---------- */
+
+section {
+    padding: 110px 7%;
+}
+
+
+.section-content {
+    max-width: 750px;
+    margin: auto;
+
+    text-align: center;
+}
+
+
+section h2 {
+    font-size: clamp(2.2rem, 5vw, 4rem);
+
+    font-weight: normal;
+
+    line-height: 1.15;
+
+    margin-bottom: 30px;
+}
+
+
+section p {
+    margin-bottom: 20px;
+}
+
+
+/* ---------- ABOUT ---------- */
+
+.about {
+    background: #eee8df;
+}
+
+
+.about .eyebrow {
+    color: #75675c;
+}
+
+
+/* ---------- PORTFOLIO ---------- */
+
+.portfolio {
+    background: #f8f5f0;
+}
+
+
+.section-heading {
+    max-width: 800px;
+
+    margin: 0 auto 60px;
+
+    text-align: center;
+}
+
+
+.portfolio-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+
+    max-width: 1200px;
+
+    margin: auto;
+}
+
+
+.portfolio-card {
+    overflow: hidden;
+    background: #eee8df;
+    aspect-ratio: 4 / 5;
+}
+.portfolio-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+<!-- Portfolio -->
+
+<section id="portfolio" class="portfolio">
+
+    <div class="section-heading">
+
+        <p class="eyebrow">
+            MY WORK
+        </p>
+
+        <h2>
+            Stories told through photographs.
+        </h2>
+
+    </div>
+
+
+    <div class="portfolio-grid">
+
+        <div class="portfolio-card">
+            <img src="images/family.jpg" alt="Family photography">
+        </div>
+
+
+        <div class="portfolio-card">
+            <img src="images/couples.jpg" alt="Couples photography">
+        </div>
+
+
+        <div class="portfolio-card">
+            <img src="images/maternity.jpg" alt="Maternity photography">
+        </div>
+
+
+        <div class="portfolio-card">
+            <img src="images/newborn.jpg" alt="Newborn photography">
+        </div>
+
+
+        <div class="portfolio-card">
+            <img src="images/wedding.jpg" alt="Wedding photography">
+        </div>
+
+
+        <div class="portfolio-card">
+            <img src="images/minis.jpg" alt="Mini session photography">
+        </div>
+
+    </div>
+
+</section>
+
+
+/* ---------- PRICING ---------- */
+
+.pricing {
+    background: #332d29;
+
+    color: #f8f5f0;
+}
+
+
+.pricing .eyebrow {
+    color: #cfc5ba;
+}
+
+
+.pricing-grid {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+.price-card {
+    padding: 45px 30px;
+
+    border: 1px solid rgba(248, 245, 240, 0.25);
+
+    text-align: center;
+}
+
+
+.price-card h3 {
+    font-size: 1.5rem;
+
+    font-weight: normal;
+
+    margin-bottom: 20px;
+}
+
+
+.price {
+    font-size: 1.2rem;
+
+    margin-bottom: 20px;
+}
+
+
+.featured {
+    background: #4a4039;
+}
+
+
+/* ---------- CONTACT ---------- */
+
+.contact {
+    text-align: center;
+
+    background: #eee8df;
+}
+
+
+.contact-content {
+    max-width: 750px;
+
+    margin: auto;
+}
+
+
+.contact .button {
+    background: #332d29;
+
+    color: #f8f5f0;
+
+    margin-top: 15px;
+}
+
+
+.contact .button:hover {
+    background: #75675c;
+}
+
+
+/* ---------- FOOTER ---------- */
+
+footer {
+    padding: 35px 20px;
+
+    text-align: center;
+
+    background: #332d29;
+
+    color: #cfc5ba;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 0.75rem;
+
+    letter-spacing: 1px;
+}
+
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 800px) {
+
+    .navbar {
+        padding: 18px 5%;
+
+        flex-direction: column;
+
+        gap: 12px;
+    }
+
+
+    nav {
+        gap: 15px;
+    }
+
+
+    nav a {
+        font-size: 0.65rem;
+    }
+
+
+    .hero {
+        background-attachment: scroll;
+    }
+
+
+    .hero h1 {
+        font-size: 3.2rem;
+    }
+
+
+    section {
+        padding: 80px 6%;
+    }
+
+
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 10px;
+    }
+
+
+    .pricing-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .logo {
+        font-size: 1rem;
+    }
+
+
+    nav {
+        gap: 10px;
+    }
+
+
+    nav a {
+        font-size: 0.55rem;
+        letter-spacing: 1px;
+    }
+
+
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .hero h1 {
+        font-size: 2.8rem;
+    }
+
+}
+/* ---------- BOOKING FORM ---------- */
+
+.booking-form {
+    max-width: 900px;
+
+    margin: 60px auto 0;
+
+    text-align: left;
+}
+
+
+.form-row {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 25px;
+
+    margin-bottom: 25px;
+}
+
+
+.form-group {
+    display: flex;
+
+    flex-direction: column;
+
+    margin-bottom: 25px;
+}
+
+
+.form-group label {
+    margin-bottom: 8px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 0.75rem;
+
+    letter-spacing: 1.5px;
+
+    text-transform: uppercase;
+}
+
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+
+    width: 100%;
+
+    padding: 15px;
+
+    border: 1px solid #cfc5ba;
+
+    background: #f8f5f0;
+
+    color: #332d29;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 1rem;
+
+    border-radius: 0;
+
+    outline: none;
+
+    transition: border-color 0.3s ease;
+}
+
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+
+    border-color: #75675c;
+}
+
+
+.form-group textarea {
+
+    resize: vertical;
+
+    min-height: 150px;
+}
+
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+
+    color: #9b9087;
+}
+
+
+.form-button {
+
+    border: none;
+
+    cursor: pointer;
+
+    margin-top: 10px;
+}
+
+
+/* ---------- MOBILE BOOKING FORM ---------- */
+
+@media (max-width: 700px) {
+
+    .form-row {
+
+        grid-template-columns: 1fr;
+
+        gap: 0;
+
+    }
+
+
+    .booking-form {
+
+        margin-top: 40px;
+
+    }
+
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+
+        font-size: 16px;
+
+    }
+
+}/* ---------- MOBILE MENU ---------- */
+
+.menu-toggle {
+    display: none;
+
+    background: none;
+
+    border: none;
+
+    font-size: 1.6rem;
+
+    color: #332d29;
+
+    cursor: pointer;
+}
+
+
+@media (max-width: 700px) {
+
+    .navbar {
+        position: fixed;
+
+        flex-direction: row;
+
+        justify-content: space-between;
+
+        align-items: center;
+    }
+
+
+    .menu-toggle {
+        display: block;
+    }
+
+
+    .nav-menu {
+        display: none;
+
+        position: absolute;
+
+        top: 100%;
+
+        left: 0;
+
+        width: 100%;
+
+        background: #f8f5f0;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 20px;
+
+        padding: 25px;
+    }
+
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+}
