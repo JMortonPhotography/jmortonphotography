@@ -29,7 +29,7 @@ if (bookingForm) {
     bookingForm.addEventListener("submit", function () {
         setTimeout(function () {
             bookingForm.reset();
-            formSuccess.style.display = "thank you";
+            formSuccess.style.display = "blcok";
         }, 1000);
     });
 }
