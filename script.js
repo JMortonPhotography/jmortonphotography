@@ -1,18 +1,28 @@
 const bookingForm = document.querySelector(".booking-form");
-const formSuccess = document.querySelector(".form-success");
+const formSuccess = document.querySelector("#form-success");
+const hiddenIframe = document.querySelector("#hidden_iframe");
+
+let formSubmitted = false;
 
 if (bookingForm) {
-  bookingForm.addEventListener("submit", function (event) {
-    event.preventDefault();
+    bookingForm.addEventListener("submit", function () {
+        // DO NOT prevent the form from submitting.
+        formSubmitted = true;
+    });
+}
 
-    HTMLFormElement.prototype.submit.call(bookingForm);
+if (hiddenIframe) {
+    hiddenIframe.addEventListener("load", function () {
+        if (formSubmitted) {
+            if (formSuccess) {
+                formSuccess.style.display = "block";
+            }
 
-    setTimeout(function () {
-      bookingForm.reset();
+            if (bookingForm) {
+                bookingForm.reset();
+            }
 
-      if (formSuccess) {
-        formSuccess.style.display = "block";
-      }
-    }, 1000);
-  });
+            formSubmitted = false;
+        }
+    });
 }
