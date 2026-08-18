@@ -269,199 +269,128 @@
         </p>
 
     </div>
+<form
+    class="booking-form"
+    action="https://script.google.com/macros/s/AKfycbyi6ZejkEZWkYn485cQpObhhc3a5W05SROf8atT-Hl4CRPQ9iIpNRewJW1t47qfm-ADJg/exec"
+    method="POST"
+    target="hidden_iframe"
+    onsubmit="document.getElementById('form-success').style.display='block';"
+>
 
+    <iframe name="hidden_iframe" style="display:none;"></iframe>
 
-    <form
-        class="booking-form"
-        action="https://script.google.com/a/macros/jmortonphotography.com/s/AKfycbyi6ZejkEZWkYn485cQpObhhc3a5W05SROf8atT-Hl4CRPQ9iIpNRewJW1t47qfm-ADJg/exec"
-        method="post"
-        target="hidden_iframe"
-    >
-<iframe name="hidden_iframe" style="display:none;"></iframe>
+    <div id="form-success" class="form-success">
+        <h3>Thank you! 📸</h3>
+        <p>Your inquiry has been sent successfully. I'll be in touch soon!</p>
+    </div>
 
-<div id="form-success" class="form-success">
-    <h3>Thank you! 📸</h3>
-    <p>Your inquiry has been sent successfully. I'll be in touch soon!</p>
-</div>
-        <div class="form-row">
-
-            <div class="form-group">
-
-                <label for="name">
-                    Name
-                </label>
-
-                <input
-                    type="text"
-                    id="name"
-                    name="Name"
-                    placeholder="Your name"
-                    required
-                >
-
-            </div>
-
-
-            <div class="form-group">
-
-                <label for="email">
-                    Email
-                </label>
-
-                <input
-                    type="email"
-                    id="email"
-                    name="Email"
-                    placeholder="Your email"
-                    required
-                >
-
-            </div>
-
-        </div>
-
-
-        <div class="form-row">
-
-            <div class="form-group">
-
-                <label for="phone">
-                    Phone
-                </label>
-
-                <input
-                    type="tel"
-                    id="phone"
-                    name="Phone"
-                    placeholder="Your phone number"
-                >
-
-            </div>
-
-
-            <div class="form-group">
-
-                <label for="session">
-                    Session Type
-                </label>
-
-                <select id="session" name="Session Type" required>
-
-                    <option value="">
-                        Select a session
-                    </option>
-
-                    <option value="Family">
-                        Family
-                    </option>
-
-                    <option value="Couples">
-                        Couples
-                    </option>
-
-                    <option value="Maternity">
-                        Maternity
-                    </option>
-
-                    <option value="Newborn">
-                        Newborn
-                    </option>
-
-                    <option value="Wedding">
-                        Wedding
-                    </option>
-
-                    <option value="Mini Session">
-                        Mini Session
-                    </option>
-
-                    <option value="Other">
-                        Other
-                    </option>
-
-                </select>
-
-            </div>
-
-        </div>
-
-
-        <div class="form-row">
-
-            <div class="form-group">
-
-                <label for="date">
-                    Preferred Date
-                </label>
-
-                <input
-                    type="date"
-                    id="date"
-                    name="Preferred Date"
-                >
-
-            </div>
-
-
-            <div class="form-group">
-
-                <label for="people">
-                    Number of People
-                </label>
-
-                <input
-                    type="number"
-                    id="people"
-                    name="Number of People"
-                    min="1"
-                    placeholder="Example: 4"
-                >
-
-            </div>
-
-        </div>
-
+    <div class="form-row">
 
         <div class="form-group">
-
-            <label for="location">
-                Preferred Location
-            </label>
-
+            <label for="name">Name</label>
             <input
                 type="text"
-                id="location"
-                name="Preferred Location"
-                placeholder="Where would you like your session?"
+                id="name"
+                name="Name"
+                placeholder="Your name"
+                required
             >
-
         </div>
-
 
         <div class="form-group">
-
-            <label for="message">
-                Tell me about your session
-            </label>
-
-            <textarea
-                id="message"
-                name="Message"
-                rows="6"
-                placeholder="Tell me about your vision, who will be photographed, and anything else you'd like me to know."
-            ></textarea>
-
+            <label for="email">Email</label>
+            <input
+                type="email"
+                id="email"
+                name="Email"
+                placeholder="Your email"
+                required
+            >
         </div>
 
+    </div>
 
-        <button
-            type="submit"
-            class="button form-button"
+    <div class="form-row">
+
+        <div class="form-group">
+            <label for="phone">Phone</label>
+            <input
+                type="tel"
+                id="phone"
+                name="Phone"
+                placeholder="Your phone number"
+            >
+        </div>
+
+        <div class="form-group">
+            <label for="session">Session Type</label>
+            <select id="session" name="Session Type" required>
+                <option value="">Select a session</option>
+                <option value="Family">Family</option>
+                <option value="Couples">Couples</option>
+                <option value="Maternity">Maternity</option>
+                <option value="Newborn">Newborn</option>
+                <option value="Wedding">Wedding</option>
+                <option value="Mini Session">Mini Session</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+
+    </div>
+
+    <div class="form-row">
+
+        <div class="form-group">
+            <label for="date">Preferred Date</label>
+            <input
+                type="date"
+                id="date"
+                name="Preferred Date"
+            >
+        </div>
+
+        <div class="form-group">
+            <label for="people">Number of People</label>
+            <input
+                type="number"
+                id="people"
+                name="Number of People"
+                min="1"
+                placeholder="Example: 4"
+            >
+        </div>
+
+    </div>
+
+    <div class="form-group">
+        <label for="location">Preferred Location</label>
+        <input
+            type="text"
+            id="location"
+            name="Preferred Location"
+            placeholder="Where would you like your session?"
         >
-            Send Inquiry
-        </button>
+    </div>
 
-    </form>
+    <div class="form-group">
+        <label for="message">Tell me about your session</label>
+        <textarea
+            id="message"
+            name="Message"
+            rows="6"
+            placeholder="Tell me about your vision, who will be photographed, and anything else you'd like me to know."
+        ></textarea>
+    </div>
+
+    <button
+        type="submit"
+        class="button form-button"
+    >
+        Send Inquiry
+    </button>
+
+</form>
+
 
 </section>
 
