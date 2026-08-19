@@ -1,643 +1,482 @@
-/* =========================================
-   MORTON PHOTOGRAPHY
-   Main Website Styles
-========================================= */
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
 
-/* ---------- BASIC RESET ---------- */
+    <meta charset="UTF-8">
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>Morton Photography | Oklahoma Photographer</title>
 
-html {
-    scroll-behavior: smooth;
-}
+    <meta
+        name="description"
+        content="Morton Photography captures genuine moments, beautiful memories, and life's biggest milestones."
+    >
 
+    <link rel="stylesheet" href="style.css">
 
-body {
-    font-family: Georgia, "Times New Roman", serif;
-    color: #332d29;
-    background: #f8f5f0;
-    line-height: 1.7;
-}
+</head>
 
 
-/* ---------- NAVIGATION ---------- */
+<body>
 
-.navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    <!-- Navigation -->
 
-    padding: 22px 6%;
+    <header class="navbar">
 
-    background: rgba(248, 245, 240, 0.95);
+        <div class="logo">
+            Morton Photography
+        </div>
 
-    z-index: 1000;
+       <button class="menu-toggle" aria-label="Open navigation">
+    ☰
+</button>
 
-    border-bottom: 1px solid rgba(51, 45, 41, 0.1);
-}
+<nav class="nav-menu">
 
+    <a href="#home">Home</a>
 
-.logo {
-    font-size: 1.3rem;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-}
+    <a href="#about">About</a>
 
+    <a href="#portfolio">Portfolio</a>
 
-nav {
-    display: flex;
-    gap: 30px;
-}
+    <a href="#pricing">Pricing</a>
 
+    <a href="#contact">Contact</a>
 
-nav a {
-    text-decoration: none;
-    color: #332d29;
+</nav>
 
-    font-family: Arial, sans-serif;
-    font-size: 0.8rem;
+    </header>
 
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
 
-    transition: opacity 0.3s ease;
-}
 
+    <!-- Hero Section -->
 
-nav a:hover {
-    opacity: 0.55;
-}
+    <section id="home" class="hero">
 
+        <div class="hero-content">
 
-/* ---------- HERO ---------- */
+            <p class="eyebrow">
+                OKLAHOMA PHOTOGRAPHER
+            </p>
 
-.hero {
-    min-height: 100vh;
+            <h1>
+                Moments worth remembering.
+            </h1>
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+            <p class="hero-text">
+                Authentic, timeless photography for families,
+                couples, milestones, and all the beautiful moments
+                in between.
+            </p>
 
-    text-align: center;
+            <a href="#contact" class="button">
+                Book Your Session
+            </a>
 
-    padding: 120px 20px 80px;
+        </div>
 
-    background:
-        linear-gradient(
-            rgba(40, 34, 30, 0.35),
-            rgba(40, 34, 30, 0.35)
-        ),
-        url("images/hero.jpg");
+    </section>
 
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
 
-    color: white;
-}
 
+    <!-- About -->
 
-.hero-content {
-    max-width: 800px;
-}
+    <section id="about" class="about">
 
+        <div class="section-content">
 
-.eyebrow {
-    font-family: Arial, sans-serif;
+            <p class="eyebrow">
+                MEET YOUR PHOTOGRAPHER
+            </p>
 
-    font-size: 0.75rem;
+            <h2>
+                Hey, I'm Jordyn.
+            </h2>
 
-    letter-spacing: 4px;
+            <p>
+                I'm the photographer behind Morton Photography.
+                I love capturing the genuine moments that make
+                your family and your story uniquely yours.
+            </p>
 
-    text-transform: uppercase;
+            <p>
+                From growing families and tiny newborns to couples,
+                celebrations, and everything in between, my goal
+                is to create photographs you'll want to keep
+                forever.
+            </p>
 
-    margin-bottom: 20px;
-}
+        </div>
 
+    </section>
 
-.hero h1 {
-    font-size: clamp(3rem, 7vw, 6rem);
 
-    line-height: 1.05;
 
-    font-weight: normal;
+    <!-- Portfolio -->
 
-    margin-bottom: 25px;
-}
+    <!-- Portfolio -->
 
+<section id="portfolio" class="portfolio">
 
-.hero-text {
-    max-width: 650px;
+    <div class="section-heading">
 
-    margin: 0 auto 35px;
+        <p class="eyebrow">
+            MY WORK
+        </p>
 
-    font-size: 1.1rem;
-}
+        <h2>
+            Stories told through photographs.
+        </h2>
 
+    </div>
 
-/* ---------- BUTTON ---------- */
 
-.button {
-    display: inline-block;
+    <div class="portfolio-grid">
 
-    padding: 15px 30px;
+        <div class="portfolio-card">
+            <img src="images/family.jpg" alt="Family photography">
+        </div>
 
-    background: #f8f5f0;
 
-    color: #332d29;
+        <div class="portfolio-card">
+            <img src="images/couples.jpg" alt="Couples photography">
+        </div>
 
-    text-decoration: none;
 
-    font-family: Arial, sans-serif;
+        <div class="portfolio-card">
+            <img src="images/maternity.jpg" alt="Maternity photography">
+        </div>
 
-    font-size: 0.8rem;
 
-    letter-spacing: 2px;
+        <div class="portfolio-card">
+            <img src="images/newborn.jpg" alt="Newborn photography">
+        </div>
 
-    text-transform: uppercase;
 
-    transition: all 0.3s ease;
-}
+        <div class="portfolio-card">
+            <img src="images/wedding.jpg" alt="Wedding photography">
+        </div>
 
 
-.button:hover {
-    background: #332d29;
-    color: #f8f5f0;
-}
+        <div class="portfolio-card">
+            <img src="images/minis.jpg" alt="Mini session photography">
+        </div>
 
+    </div>
 
-/* ---------- GENERAL SECTIONS ---------- */
+</section>
+    <!-- Pricing -->
 
-section {
-    padding: 110px 7%;
-}
+    <section id="pricing" class="pricing">
 
+        <div class="section-heading">
 
-.section-content {
-    max-width: 750px;
-    margin: auto;
+            <p class="eyebrow">
+                INVESTMENT
+            </p>
 
-    text-align: center;
-}
+            <h2>
+                Let's make some memories.
+            </h2>
 
+        </div>
 
-section h2 {
-    font-size: clamp(2.2rem, 5vw, 4rem);
 
-    font-weight: normal;
+        <div class="pricing-grid">
 
-    line-height: 1.15;
+            <div class="price-card">
 
-    margin-bottom: 30px;
-}
+                <h3>
+                    Mini Sessions
+                </h3>
 
+                <p class="price">
+                    Starting at $50
+                </p>
 
-section p {
-    margin-bottom: 20px;
-}
+                <p>
+                    Perfect for quick family,
+                    seasonal, and milestone sessions.
+                </p>
 
+            </div>
 
-/* ---------- ABOUT ---------- */
 
-.about {
-    background: #eee8df;
-}
+            <div class="price-card featured">
 
+                <h3>
+                    Portrait Sessions
+                </h3>
 
-.about .eyebrow {
-    color: #75675c;
-}
+                <p class="price">
+                    Starting at $75
+                </p>
 
+                <p>
+                    Relaxed sessions designed to
+                    capture your family's personality
+                    and genuine connection.
+                </p>
 
-/* ---------- PORTFOLIO ---------- */
+            </div>
 
-.portfolio {
-    background: #f8f5f0;
-}
 
+            <div class="price-card">
 
-.section-heading {
-    max-width: 800px;
+                <h3>
+                    Weddings
+                </h3>
 
-    margin: 0 auto 60px;
+                <p class="price">
+                    Custom Pricing
+                </p>
 
-    text-align: center;
-}
+                <p>
+                    Beautiful coverage for your
+                    special day and the moments
+                    you'll never want to forget.
+                </p>
 
+            </div>
 
-.portfolio-grid {
-    display: grid;
+        </div>
 
-    grid-template-columns: repeat(3, 1fr);
+    </section>
 
-    gap: 20px;
 
-    max-width: 1200px;
 
-    margin: auto;
-}
+    <!-- Contact -->
 
+    <!-- Contact / Booking -->
 
-.portfolio-card {
-    overflow: hidden;
-    background: #eee8df;
-    aspect-ratio: 4 / 5;
-}
-.portfolio-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
+<section id="contact" class="contact">
 
-/* ---------- PRICING ---------- */
+    <div class="contact-content">
 
-.pricing {
-    background: #332d29;
+        <p class="eyebrow">
+            LET'S WORK TOGETHER
+        </p>
 
-    color: #f8f5f0;
-}
+        <h2>
+       Let's plan your session.
+        </h2>
 
+        <p>
+            Tell me a little about what you're looking for and I'll get back to you as soon as possible.
+        </p>
 
-.pricing .eyebrow {
-    color: #cfc5ba;
-}
+    </div>
 
 
-.pricing-grid {
-    max-width: 1100px;
+    <form
+        class="booking-form"
+        action="mailto:morton@jmortonphotography.com"
+        method="post"
+        enctype="text/plain"
+    >
 
-    margin: auto;
+        <div class="form-row">
 
-    display: grid;
+            <div class="form-group">
 
-    grid-template-columns: repeat(3, 1fr);
+                <label for="name">
+                    Name
+                </label>
 
-    gap: 25px;
-}
+                <input
+                    type="text"
+                    id="name"
+                    name="Name"
+                    placeholder="Your name"
+                    required
+                >
 
+            </div>
 
-.price-card {
-    padding: 45px 30px;
 
-    border: 1px solid rgba(248, 245, 240, 0.25);
+            <div class="form-group">
 
-    text-align: center;
-}
+                <label for="email">
+                    Email
+                </label>
 
+                <input
+                    type="email"
+                    id="email"
+                    name="Email"
+                    placeholder="Your email"
+                    required
+                >
 
-.price-card h3 {
-    font-size: 1.5rem;
+            </div>
 
-    font-weight: normal;
+        </div>
 
-    margin-bottom: 20px;
-}
 
+        <div class="form-row">
 
-.price {
-    font-size: 1.2rem;
+            <div class="form-group">
 
-    margin-bottom: 20px;
-}
+                <label for="phone">
+                    Phone
+                </label>
 
+                <input
+                    type="tel"
+                    id="phone"
+                    name="Phone"
+                    placeholder="Your phone number"
+                >
 
-.featured {
-    background: #4a4039;
-}
+            </div>
 
 
-/* ---------- CONTACT ---------- */
+            <div class="form-group">
 
-.contact {
-    text-align: center;
+                <label for="session">
+                    Session Type
+                </label>
 
-    background: #eee8df;
-}
+                <select id="session" name="Session Type" required>
 
+                    <option value="">
+                        Select a session
+                    </option>
 
-.contact-content {
-    max-width: 750px;
+                    <option value="Family">
+                        Family
+                    </option>
 
-    margin: auto;
-}
+                    <option value="Couples">
+                        Couples
+                    </option>
 
+                    <option value="Maternity">
+                        Maternity
+                    </option>
 
-.contact .button {
-    background: #332d29;
+                    <option value="Newborn">
+                        Newborn
+                    </option>
 
-    color: #f8f5f0;
+                    <option value="Wedding">
+                        Wedding
+                    </option>
 
-    margin-top: 15px;
-}
+                    <option value="Mini Session">
+                        Mini Session
+                    </option>
 
+                    <option value="Other">
+                        Other
+                    </option>
 
-.contact .button:hover {
-    background: #75675c;
-}
+                </select>
 
+            </div>
 
-/* ---------- FOOTER ---------- */
+        </div>
 
-footer {
-    padding: 35px 20px;
 
-    text-align: center;
+        <div class="form-row">
 
-    background: #332d29;
+            <div class="form-group">
 
-    color: #cfc5ba;
+                <label for="date">
+                    Preferred Date
+                </label>
 
-    font-family: Arial, sans-serif;
+                <input
+                    type="date"
+                    id="date"
+                    name="Preferred Date"
+                >
 
-    font-size: 0.75rem;
+            </div>
 
-    letter-spacing: 1px;
-}
 
+            <div class="form-group">
 
-/* ---------- MOBILE ---------- */
+                <label for="people">
+                    Number of People
+                </label>
 
-@media (max-width: 800px) {
+                <input
+                    type="number"
+                    id="people"
+                    name="Number of People"
+                    min="1"
+                    placeholder="Example: 4"
+                >
 
-    .navbar {
-        padding: 18px 5%;
+            </div>
 
-        flex-direction: column;
+        </div>
 
-        gap: 12px;
-    }
 
+        <div class="form-group">
 
-    nav {
-        gap: 15px;
-    }
+            <label for="location">
+                Preferred Location
+            </label>
 
+            <input
+                type="text"
+                id="location"
+                name="Preferred Location"
+                placeholder="Where would you like your session?"
+            >
 
-    nav a {
-        font-size: 0.65rem;
-    }
+        </div>
 
 
-    .hero {
-        background-attachment: scroll;
-    }
+        <div class="form-group">
 
+            <label for="message">
+                Tell me about your session
+            </label>
 
-    .hero h1 {
-        font-size: 3.2rem;
-    }
+            <textarea
+                id="message"
+                name="Message"
+                rows="6"
+                placeholder="Tell me about your vision, who will be photographed, and anything else you'd like me to know."
+            ></textarea>
 
+        </div>
 
-    section {
-        padding: 80px 6%;
-    }
 
+        <button
+            type="submit"
+            class="button form-button"
+        >
+            Send Inquiry
+        </button>
 
-    .portfolio-grid {
-        grid-template-columns: repeat(2, 1fr);
+    </form>
 
-        gap: 10px;
-    }
+</section>
 
 
-    .pricing-grid {
-        grid-template-columns: 1fr;
-    }
 
-}
+    <!-- Footer -->
 
+    <footer>
 
-@media (max-width: 500px) {
+        <p>
+            © 2026 Morton Photography
+        </p>
 
-    .logo {
-        font-size: 1rem;
-    }
+        <p>
+            Oklahoma Photographer
+        </p>
 
+    </footer>
 
-    nav {
-        gap: 10px;
-    }
+<script src="script.js"></script>
+</body>
 
-
-    nav a {
-        font-size: 0.55rem;
-        letter-spacing: 1px;
-    }
-
-
-    .portfolio-grid {
-        grid-template-columns: 1fr;
-    }
-
-
-    .hero h1 {
-        font-size: 2.8rem;
-    }
-
-}
-/* ---------- BOOKING FORM ---------- */
-
-.booking-form {
-    max-width: 900px;
-
-    margin: 60px auto 0;
-
-    text-align: left;
-}
-
-
-.form-row {
-    display: grid;
-
-    grid-template-columns: 1fr 1fr;
-
-    gap: 25px;
-
-    margin-bottom: 25px;
-}
-
-
-.form-group {
-    display: flex;
-
-    flex-direction: column;
-
-    margin-bottom: 25px;
-}
-
-
-.form-group label {
-    margin-bottom: 8px;
-
-    font-family: Arial, sans-serif;
-
-    font-size: 0.75rem;
-
-    letter-spacing: 1.5px;
-
-    text-transform: uppercase;
-}
-
-
-.form-group input,
-.form-group select,
-.form-group textarea {
-
-    width: 100%;
-
-    padding: 15px;
-
-    border: 1px solid #cfc5ba;
-
-    background: #f8f5f0;
-
-    color: #332d29;
-
-    font-family: Arial, sans-serif;
-
-    font-size: 1rem;
-
-    border-radius: 0;
-
-    outline: none;
-
-    transition: border-color 0.3s ease;
-}
-
-
-.form-group input:focus,
-.form-group select:focus,
-.form-group textarea:focus {
-
-    border-color: #75675c;
-}
-
-
-.form-group textarea {
-
-    resize: vertical;
-
-    min-height: 150px;
-}
-
-
-.form-group input::placeholder,
-.form-group textarea::placeholder {
-
-    color: #9b9087;
-}
-
-
-.form-button {
-
-    border: none;
-
-    cursor: pointer;
-
-    margin-top: 10px;
-}
-
-
-/* ---------- MOBILE BOOKING FORM ---------- */
-
-@media (max-width: 700px) {
-
-    .form-row {
-
-        grid-template-columns: 1fr;
-
-        gap: 0;
-
-    }
-
-
-    .booking-form {
-
-        margin-top: 40px;
-
-    }
-
-
-    .form-group input,
-    .form-group select,
-    .form-group textarea {
-
-        font-size: 16px;
-
-    }
-
-}/* ---------- MOBILE MENU ---------- */
-
-.menu-toggle {
-    display: none;
-
-    background: none;
-
-    border: none;
-
-    font-size: 1.6rem;
-
-    color: #332d29;
-
-    cursor: pointer;
-}
-
-
-@media (max-width: 700px) {
-
-    .navbar {
-        position: fixed;
-
-        flex-direction: row;
-
-        justify-content: space-between;
-
-        align-items: center;
-    }
-
-
-    .menu-toggle {
-        display: block;
-    }
-
-
-    .nav-menu {
-        display: none;
-
-        position: absolute;
-
-        top: 100%;
-
-        left: 0;
-
-        width: 100%;
-
-        background: #f8f5f0;
-
-        flex-direction: column;
-
-        align-items: center;
-
-        gap: 20px;
-
-        padding: 25px;
-    }
-
-
-    .nav-menu.active {
-        display: flex;
-    }
-
-}
+</html>
